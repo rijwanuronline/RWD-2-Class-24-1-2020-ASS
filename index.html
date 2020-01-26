@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="Eng">
+<head>
+	<title>table</title>
+	<meta charset="UTF-8">
+	<style>
+		table,th,td{
+			border:1px solid black;
+			border-collapse:collapse;
+		}
+		th,td{
+			padding:15px;
+			text-align:lest;
+		}
+		table#to1 {
+			width:100%;
+			background-color:green;
+		}
+		table#t02 tr:nth-child(even) {
+			background-color:#eee;
+		}
+		table#t02 tr:nth-child(odd){
+			background-color:#fff;
+		}
+		 
+		 table#t02 th{
+		 	background-color:black;
+		 	color:white;
+		 }
+		table#t02 {
+			text-align:center;
+			width:100% 
+		
+		}
+		table#t03{
+			 border:1px solid black;
+			 width: 100%;
+			 text-align: center;
+			}
+
+			table#t03 th{
+				background-color:yellow;
+
+			}
+			
+			table#t04 tr:nth-child(even){
+				backgroud-color:black;
+			}
+			table#t05{
+				width: 80%;
+			}
+			table#t05 th,td{
+				border:1px solid black ;
+				text-align; right: 
+
+			}
+			table#t06 {
+				width:100%;
+				text-align:center;
+			}
+
+			
+			table#t06 thead {
+			color:green;
+
+			}
+			table#t06 tbody{
+				color:blue;
+
+			}
+			table#t06 tfoot{
+				color:red;
+			}
+
+
+	</style>
+</head>
+<body>
+<h2>Stling Tables</h2>
+<table style="width:100%">
+	<tr>
+		<td>Frist name</td>
+		<td>Last Name</td>
+		<td>Age</td>
+	</tr>
+	<tr>
+		<th>Jill</th>
+		<th>smith</th>
+		<th>50</th>
+	</tr>
+
+	<tr>
+		<td>Eve</td>
+		<td>Jackson</td>
+		<td>94</td>
+	</tr>
+	<tr>
+		
+		<td>John</td>
+		<td>Doe</td>
+		<td>80</td>
+	</tr>
+
+</table>
+<br>
+
+<table id="to1">
+<tr>
+	
+     <th>Firstname</th>
+	<th>Lastname</th>
+	<th>Age</th>
+</tr>
+<tr>
+	<td>Jill</td>
+	<td>Smith</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>Eve</td>
+	<td>Jackson</td>
+	<td>50</td>
+</tr>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td>80</td>
+</tr>
+</table>
+
+<br>
+
+	<table style="width:100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+
+		<br>
+<h1>this is table</h1>
+		<table id="t02">
+			<tr>
+				<th>Fristname</th>
+				<th>Lastname</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>Jill</td>
+				<td>smith</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<td>Eve</td>
+				<td>Kakson</td>
+				<td>94</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>80</td>
+			</tr>
+		</table>
+		<br>
+		<h>Chapter Summary</h>
+		<h2>Use the HTML<table>element to define a table</h2>
+			<h2>Use the HTML <tr>element to difine a table row</h2>
+				<h2>Use the HTML <td>element to define a table data</h2>
+					<h2>use the Html <th>element to define a table heading</h2>
+						<h2>use the HTML <caption>element to define a gable caption</h2>
+							<h2>
+								Use the HTML border property to define aborder
+							</h2>
+							<h2>Use the CSS border property to define a border</h2>
+
+</caption>
+
+
+<br>
+<table style="border:1px,solid black">
+	<tr>
+		<th>Month</th>
+		<th>Sabing</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+	<tr>
+		<td>February</td>
+		<td>$80</td>
+	</tr>
+</table>
+<br>
+<table id="t03">
+	<tr>
+		<th>Month</th>
+		<th>Saving</th>
+	</tr>
+	<tr>
+		<td>january</td>
+		<td>#100</td>
+	</tr>
+	<tr>
+		<td>February</td>
+		<td>$80</td>
+	</tr>
+</table>
+<br>
+<h1>HTML <tr> Tag</h1>
+
+	<table id="t04">
+		<tr>
+			<th>Month</th>
+			<th>Saving </th>
+		</tr>
+		<tr>
+			<td>june</td>
+			<td>$100000</td>
+
+		</tr>
+		<tr>
+			<td>July</td>
+			<td>No Savings</td>
+		</tr>
+	</table>
+	<br>
+	<table id="t05">
+		<colgroup>
+			<col span="2" style="background-color:red">
+			<col style="background-color:yellow">
+		</colgroup>
+		<tr>
+		<th>ISBN</th>
+		<th>Title</th>
+		<th>Price</th>
+	</tr>
+	<tr>
+		<td>3476896</td>
+		<td>My Frist Html</td>
+		<td>$53</td>
+	</tr>
+	<tr>
+		<td>5869207</td>
+		<td>My First CSS</td>
+		<td>&49</td>
+	</tr>
+	</table>
+	<br>
+
+	<p>An HTML table with a thead. ,tbody tfoot. tag </p>
+	<table id="t06">
+		<thead>
+			<tr>
+			<th>Month</th>
+			<th>Saving</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>January</td>
+				<td>$100</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>February</td>
+				<td>$80</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Sum</td>
+				<td>$180</td>
+			</tr>
+		</tfoot>
+	</table>
+	<br>
+
+	<h1 style="background-color:Tomato;">Tomato</h1>
+	<h1 style="background-color:orange;">Orange</h1>
+	<h1 style="background-color:DodgerBlue">DogerBlue</h1>
+	<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+	<h1 style="background-color:gray;">Gray</h1>
+	<h1 style="background-color:slateBlue">SlateBlue</h1>
+	<h1 style="background-color:violet;">Violet</h1>
+	<h1 style="background-color:LightGray;">LightGray</h1>
+	<br>
+	<h2>An Unordered HTML List</h2>
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<h2>An Ordered HTML List</h2>
+	<ol>
+		<li>Man</li>
+		<li>Woman</li>
+		<li>Coffee</li>
+	</ol>
+	<br>
+	<h1>HTML Attributes</h1>
+	<h2>the href Attribute </h2>
+	<p>HTML liks are defined with teh a tag. The link address is specified in the href attribute:</p>
+	<a href="https://www.facebook.com">this is a link </a>
+	<br>
+	<a href="https://www.youtube.com/">this the youtube link</a>
+	<br>
+	<a href="https://abcnews.go.com/International/">this is abc News international News</a>
+	<br>
+	<a href="https://www.aljazeera.net/">aljazeera.net</a>
+	<br>
+	<a href="https://www.bbc.com/news/world">BBC News</a>
+	<br>
+	<a href="https://arabic.cnn.com/">Arabic cnn</a>
+	<br>
+	<h2> src Attributes</h2>
+
+	<img src="images/1.jpg" width="400" height="400">
+
+
+
+
+
+</body>
+</html>
